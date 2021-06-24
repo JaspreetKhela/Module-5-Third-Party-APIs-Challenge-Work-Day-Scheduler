@@ -1,18 +1,20 @@
+/* Body styling */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+/* textarea{
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-}
+} */
 
+/* Jumbotron styling */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -21,22 +23,25 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+/* Description styling */
 .description{
   white-space: pre-wrap;
 }
 
+/* Time styling in the first row */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* Row styling */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
-.hour {
+/* .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -55,8 +60,9 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
-}
+} */
 
+/* Save button styling */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,11 +71,13 @@ textarea{
   color: white;
 }
 
+/* Save button hover styling */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
 
+/* First column's styling */
 .first-column {
   background-color: #06AED5;
   display: flex;
@@ -79,6 +87,7 @@ textarea{
   color: yellow;
 }
 
+/* Second column's default styling */
 .second-column {
   background-color: #77dd77;
   display: flex;
@@ -88,7 +97,18 @@ textarea{
   color: darkblue;
 }
 
-.save-button {
+/* Second column's styling if a row's hour has passed */
+.second-column-red {
+  background-color:  red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: darkblue;
+}
+
+/* Save column's styling */
+.save-column {
   background-color: #06AED5;
   display: flex;
   justify-content: center;
@@ -99,7 +119,7 @@ textarea{
 
 /* Style buttons */
 .btn {
-  background-color: DodgerBlue; /* Blue background */
+  background-color: darkblue; /* Blue background */
   border: none; /* Remove borders */
   color: white; /* White text */
   padding: 12px 16px; /* Some padding */

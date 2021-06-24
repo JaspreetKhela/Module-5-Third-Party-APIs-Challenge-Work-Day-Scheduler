@@ -1,3 +1,10 @@
+<!-- 
+Title: Work Day Scheduler Application
+Create by: Jaspreet Khela
+Created on: June 18, 2021
+Description: A task scheduler that dynamically changes the color of the text box for an hour if that hour has passed 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +29,7 @@
       rel="stylesheet"
     />
     
-    <!-- Add icon library -->
+    <!-- Adding icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="./assets/cs/style.css" />
@@ -31,6 +38,7 @@
   </head>
 
   <body>
+    <!-- Page title, description, and current date and time -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -40,78 +48,115 @@
       <p id="saved"></p>
     </header>
 
+    <!-- Scheduler container -->
     <div class="container">
-      <!-- Timeblocks -->
+      <!-- Time blocks -->
       <div class="container">
+        <!-- Time block row for 9:00 AM -->
         <div class="row">
+          <!-- Time column for 9:00 AM -->
           <div id="9-first-column" class="first-column col-2" align="center">9:00 AM</div>
+          <!-- Row text content for 9:00 AM -->
           <div id="9-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="9-save-button" class="btn" type="click"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 9:00 AM -->
+          <div class="save-column col-2">
+            <button id="9-save-button" class="btn save-button" type="click"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 10:00 AM -->
         <div class="row">
+          <!-- Time column for 10:00 AM -->
           <div id="10-first-column" class="first-column col-2" align="center">10:00 AM</div>
+          <!-- Row text content for 10:00 AM -->
           <div id="10-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="10-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 10:00 AM -->
+          <div class="save-column col-2">
+            <button id="10-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 11:00 AM -->
         <div class="row">
+          <!-- Time column for 11:00 AM -->
           <div id="11-first-column" class="first-column col-2" align="center">11:00 AM</div>
+          <!-- Row text content for 11:00 AM -->
           <div id="11-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="11-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 11:00 AM -->
+          <div class="save-column col-2">
+            <button id="11-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 12:00 PM -->
         <div class="row">
+          <!-- Time column for 12:00 PM -->
           <div id="12-first-column" class="first-column col-2" align="center">12:00 PM</div>
+          <!-- Row text content for 12:00 PM -->
           <div id="12-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="12-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 12:00 PM -->
+          <div class="save-column col-2">
+            <button id="12-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 1:00 PM -->
         <div class="row">
+          <!-- Time column for 1:00 PM -->
           <div id="1-first-column" class="first-column col-2" align="center">1:00 PM</div>
+          <!-- Row text content for 1:00 PM -->
           <div id="1-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="1-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 1:00 PM -->
+          <div class="save-column col-2">
+            <button id="1-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 2:00 PM -->
         <div class="row">
+          <!-- Time column for 2:00 PM -->
           <div id="2-first-column" class="first-column col-2" align="center">2:00 PM</div>
+          <!-- Row text content for 2:00 PM -->
           <div id="2-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="2-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 2:00 PM -->
+          <div class="save-column col-2">
+            <button id="2-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 3:00 PM -->
         <div class="row">
+          <!-- Time column for 3:00 PM -->
           <div id="3-first-column" class="first-column col-2" align="center">3:00 PM</div>
+          <!-- Row text content for 3:00 PM -->
           <div id="3-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="3-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 3:00 PM -->
+          <div class="save-column col-2">
+            <button id="3-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 4:00 PM -->
         <div class="row">
+          <!-- Time column for 4:00 PM -->
           <div id="4-first-column" class="first-column col-2" align="center">4:00 PM</div>
+          <!-- Row text content for 4:00 PM -->
           <div id="4-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="4-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 4:00 PM -->
+          <div class="save-column col-2">
+            <button id="4-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
 
+        <!-- Time block row for 5:00 PM -->
         <div class="row">
+          <!-- Time column for 5:00 PM -->
           <div id="5-first-column" class="first-column col-2" align="center">5:00 PM</div>
+          <!-- Row text content for 5:00 PM -->
           <div id="5-second-column" class="second-column col-8" contenteditable="true"></div>
-          <div class="save-button col-2">
-            <button id="5-save-button" class="btn"><i class="fa fa-save"> Save</i></button>
+          <!-- Row save column for 5:00 PM -->
+          <div class="save-column col-2">
+            <button id="5-save-button" class="btn save-button"><i class="fa fa-save"> Save</i></button>
           </div>
         </div>
       </div>
