@@ -191,8 +191,10 @@ function saveBlockText(saveButton) {
 
 // Load saved time block content
 function load() {
-    // Retrieving the scheduler's content from the broswer's cached data
-    savedText = JSON.parse(localStorage.getItem("savedText"));
+    if (localStorage.getItem("savedText")) {
+        // Retrieving the scheduler's content from the broswer's cached data
+        savedText = JSON.parse(localStorage.getItem("savedText"));
+    }
 
     // Going through the savedText array that was loaded above
     for (var i = 0; i < savedText.length; i++) {
