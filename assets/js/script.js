@@ -191,13 +191,11 @@ function saveBlockText(saveButton) {
 
 // Load saved time block content
 function load() {
-    if (localStorage.getItem("savedText")) {
-        // Retrieving the scheduler's content from the broswer's cached data
-        savedText = JSON.parse(localStorage.getItem("savedText"));
-    }
+    // Retrieving the scheduler's content from the broswer's cached data
+    savedText = JSON.parse(localStorage.getItem("savedText"));
 
     // Going through the savedText array that was loaded above
-    for (var i = 0; i < savedText.length; i++) {
+    for (var i = 0; (savedText.length) && (i < savedText.length); i++) {
         // Load the second column's text content for the 9:00 AM slot
         if (savedText[i].block === 9) {
             textColumn9.textContent = savedText[i].text;
