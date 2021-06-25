@@ -14,5 +14,4 @@
 
 **Screenshots**:
 
-Screen Shot 2021-06-24 at 5.49.24 PM (2)![Screen Shot 2021-06-24 at 5 49 24 PM (2)](https://user-images.githubusercontent.com/80941606/123337024-a6d57000-d514-11eb-8b91-43978d6257c2.png)
-
+Screen Shot 2021-06-24 at 8.33.41 PM (2)![Screen Shot 2021-06-24 at 8 33 41 PM (2)](https://user-images.githubusercontent.com/80941606/123351839-0ab76300-d52c-11eb-937d-d4fa6dc7be6f.png)
