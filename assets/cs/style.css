@@ -107,6 +107,16 @@ body {
   color: darkblue;
 }
 
+/* Second column's styling if a row's hour is the current hour */
+.second-column-orange {
+  background-color:  orange;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: darkblue;
+}
+
 /* Save column's styling */
 .save-column {
   background-color: #06AED5;

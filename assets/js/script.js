@@ -44,58 +44,141 @@ var savedText = [
 
 // Checks whether or not the time block color needs to be changed and changes it if it needs to be changed
 function blockColor() {
+    var currentTimeBlock = 9;
+    
     // If the current time is 10:00 AM or beyond, change the 9:00 AM second column's color to red
     if (now.hour > 9) {
         textColumn9.classList.remove('second-column');
+        textColumn9.classList.remove('second-column-orange');
         textColumn9.classList.add('second-column-red');
+        currentTimeBlock = 10;
     }
 
     // If the current time is 11:00 AM or beyond, change the 10:00 AM second column's color to red
     if (now.hour > 10) {
         textColumn10.classList.remove('second-column');
+        textColumn10.classList.remove('second-column-orange');
         textColumn10.classList.add('second-column-red');
+        currentTimeBlock = 11;
     }
 
     // If the current time is 12:00 PM or beyond, change the 11:00 AM second column's color to red
     if (now.hour > 11) {
         textColumn11.classList.remove('second-column');
+        textColumn11.classList.remove('second-column-orange');
         textColumn11.classList.add('second-column-red');
+        currentTimeBlock = 12;
     }
 
     // If the current time is 1:00 PM or beyond, change the 12:00 PM second column's color to red
     if (now.hour > 12) {
         textColumn12.classList.remove('second-column');
+        textColumn12.classList.remove('second-column-orange');
         textColumn12.classList.add('second-column-red');
+        currentTimeBlock = 1;
     }
 
     // If the current time is 2:00 PM or beyond, change the 1:00 PM second column's color to red
     if (now.hour > 13) {
         textColumn1.classList.remove('second-column');
+        textColumn1.classList.remove('second-column-orange');
         textColumn1.classList.add('second-column-red');
+        currentTimeBlock = 2;
     }
 
     // If the current time is 3:00 PM or beyond, change the 2:00 PM second column's color to red
     if (now.hour > 14) {
         textColumn2.classList.remove('second-column');
+        textColumn2.classList.remove('second-column-orange');
         textColumn2.classList.add('second-column-red');
+        currentTimeBlock = 3;
     }
 
     // If the current time is 4:00 PM or beyond, change the 3:00 PM second column's color to red
     if (now.hour > 15) {
         textColumn3.classList.remove('second-column');
+        textColumn3.classList.remove('second-column-orange');
         textColumn3.classList.add('second-column-red');
+        currentTimeBlock = 4;
     }
 
     // If the current time is 5:00 PM or beyond, change the 4:00 PM second column's color to red
     if (now.hour > 16) {
         textColumn4.classList.remove('second-column');
+        textColumn4.classList.remove('second-column-orange');
         textColumn4.classList.add('second-column-red');
+        currentTimeBlock = 5;
     }
 
     // If the current time is 6:00 PM or beyond, change the 5:00 PM second column's color to red
     if (now.hour > 17) {
         textColumn5.classList.remove('second-column');
+        textColumn5.classList.remove('second-column-orange');
         textColumn5.classList.add('second-column-red');
+        currentTimeBlock = 6;
+    }
+
+    // If the current hour is 9, highlight the current time slot
+    if (currentTimeBlock === 9) {
+        textColumn9.classList.remove('second-column');
+        textColumn9.classList.remove('second-column-red');
+        textColumn9.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 10, highlight the current time slot
+    if (currentTimeBlock === 10) {
+        textColumn10.classList.remove('second-column');
+        textColumn10.classList.remove('second-column-red');
+        textColumn10.classList.add('second-column-orange');
+    }
+
+    // If the current hour is 11, highlight the current time slot
+    if (currentTimeBlock === 11) {
+        textColumn11.classList.remove('second-column');
+        textColumn11.classList.remove('second-column-red');
+        textColumn11.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 12, highlight the current time slot
+    if (currentTimeBlock === 12) {
+        textColumn12.classList.remove('second-column');
+        textColumn12.classList.remove('second-column-red');
+        textColumn12.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 1, highlight the current time slot
+    if (currentTimeBlock === 1) {
+        textColumn1.classList.remove('second-column');
+        textColumn1.classList.remove('second-column-red');
+        textColumn1.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 2, highlight the current time slot
+    if (currentTimeBlock === 2) {
+        textColumn2.classList.remove('second-column');
+        textColumn2.classList.remove('second-column-red');
+        textColumn2.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 3, highlight the current time slot
+    if (currentTimeBlock === 3) {
+        textColumn3.classList.remove('second-column');
+        textColumn3.classList.remove('second-column-red');
+        textColumn3.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 4, highlight the current time slot
+    if (currentTimeBlock === 4) {
+        textColumn4.classList.remove('second-column');
+        textColumn4.classList.remove('second-column-red');
+        textColumn4.classList.add('second-column-orange');        
+    }
+
+    // If the current hour is 5, highlight the current time slot
+    if (currentTimeBlock === 5) {
+        textColumn5.classList.remove('second-column');
+        textColumn5.classList.remove('second-column-red');
+        textColumn5.classList.add('second-column-orange');        
     }
 }
 
